@@ -1,5 +1,34 @@
 <?php
-if ( ! function_exists( 'chanda_styles' ) ) :
+/**
+ * Chanda functions and definitions
+ *
+ * @package WordPress
+ * @subpackage Chanda
+ * @since Chanda 1.0
+ */
+
+if ( ! function_exists('chanda_setup') ) :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * @since Chanda 1.0
+	 *
+	 * @return void
+	 */
+	function chanda_setup() {
+		/**
+		 * Enable support for the following post formats:
+		 * aside, gallery, quote, image, and video
+		 */
+		// TODO: add support for post formats.
+		// add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+	}
+endif;
+
+add_action( 'after_setup_theme', 'chanda_setup' );
+
+
+if ( ! function_exists('chanda_styles') ) :
 
 	/**
 	 * Enqueue styles.
