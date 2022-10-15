@@ -16,14 +16,3 @@ Tags: full-site-editing
 Chanda WordPress Theme, (C) 2022 Ankur Sethi
 Chanda is distributed under the terms of the GNU GPL.
 */
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-/* Prevent Mobile Safari from adjusting font size when phone is rotated. */
-html {
-  -webkit-text-size-adjust: 100%;
-}
