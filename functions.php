@@ -7,7 +7,7 @@
  * @since Chanda 1.0
  */
 
-if ( ! function_exists('chanda_setup') ) :
+if ( ! function_exists( 'chanda_support' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,21 +15,18 @@ if ( ! function_exists('chanda_setup') ) :
 	 *
 	 * @return void
 	 */
-	function chanda_setup() {
-		/**
-		 * Enable support for the following post formats:
-		 * aside, gallery, quote, image, and video
-		 */
-		// TODO: add support for post formats.
-		// add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+	function chanda_support() {
+		// Add support for block styles.
+		add_theme_support( 'wp-block-styles' );
+
+		// Enqueue editor styles.
+		add_editor_style( 'style.css' );
 	}
-endif;
+}
 
-add_action( 'after_setup_theme', 'chanda_setup' );
+add_action( 'after_setup_theme', 'chanda_support' );
 
-
-if ( ! function_exists('chanda_styles') ) :
-
+if ( ! function_exists( 'chanda_styles' ) ) {
 	/**
 	 * Enqueue styles.
 	 *
@@ -51,9 +48,7 @@ if ( ! function_exists('chanda_styles') ) :
 
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'chanda-style' );
-
 	}
-
-endif;
+}
 
 add_action( 'wp_enqueue_scripts', 'chanda_styles' );
