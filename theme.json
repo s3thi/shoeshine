@@ -1,6 +1,228 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+          "name": "System Font",
+          "slug": "system-font"
+        },
+        {
+          "fontFamily": "Lora,ui-serif,Georgia,Cambria,'Times New Roman',Times,serif",
+          "name": "Lora",
+          "slug": "lora",
+          "fontFace": [
+            {
+              "fontFamily": "Lora",
+              "fontWeight": "400 700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Lora-VariableFont_wght.ttf"]
+            },
+            {
+              "fontFamily": "Lora",
+              "fontWeight": "400 700",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Lora-Italic-VariableFont_wght.ttf"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "'Libre Franklin',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'",
+          "name": "Libre Franklin",
+          "slug": "libre-franklin",
+          "fontFace": [
+            {
+              "fontFamily": "Libre Franklin",
+              "fontWeight": "400 700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/LibreFranklin-VariableFont_wght.ttf"]
+            },
+            {
+              "fontFamily": "Libre Franklin",
+              "fontWeight": "400 700",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/LibreFranklin-Italic-VariableFont_wght.ttf"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "'Fira Code',ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace",
+          "name": "Fira Code",
+          "slug": "fira-code",
+          "fontFace": [
+            {
+              "fontFamily": "Fira Code",
+              "fontWeight": "400 700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:.assets/fonts/FiraCode-VF.ttf"]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        {
+          "size": "0.875rem",
+          "slug": "small"
+        },
+        {
+          "size": "1rem",
+          "slug": "medium"
+        },
+        {
+          "size": "1.125rem",
+          "slug": "large"
+        },
+        {
+          "size": "1.25rem",
+          "slug": "x-large"
+        }
+      ]
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "foreground",
+          "color": "#374151",
+          "name": "Foreground"
+        },
+        {
+          "slug": "foreground-dark",
+          "color": "#000000",
+          "name": "Foreground (Dark)"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Background"
+        },
+        {
+          "slug": "primary",
+          "color": "#7C3AED",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#DB2777",
+          "name": "Secondary"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#4B5563",
+          "name": "Tertiary"
+        }
+      ]
+    },
+    "custom": {
+      "typography": {
+        "font-size": {
+          "2-x-large": "1.5rem",
+          "3-x-large": "1.875rem",
+          "4-x-large": "2.25rem",
+          "5-x-large": "3rem",
+          "6-x-large": "3.75rem",
+          "7-x-large": "4.5rem",
+          "8-x-large": "6rem",
+          "9-x-large": "8rem"
+        },
+        "line-height": {
+          "none": "1",
+          "tight": "1.25",
+          "snug": "1.375",
+          "normal": "1.5",
+          "relaxed": "1.625",
+          "loose": "2"
+        }
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--lora)",
+      "fontSize": "var(--wp--preset--font-size--x-large)",
+      "lineHeight": "var(--wp--custom--typography--line-height--relaxed)"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--foreground)"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--snug)",
+          "fontSize": "var(--wp--custom--typography--font-size--5-x-large)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--snug)",
+          "fontSize": "var(--wp--custom--typography--font-size--4-x-large)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--normal)",
+          "fontSize": "var(--wp--custom--typography--font-size--2-x-large)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--relaxed)",
+          "fontSize": "var(--wp--preset--font-size--x-large)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--relaxed)",
+          "fontSize": "var(--wp--preset--font-size--x-large)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--relaxed)",
+          "fontSize": "var(--wp--preset--font-size--x-large)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      }
+    }
+  },
   "templateParts": [
     {
       "name": "header",
