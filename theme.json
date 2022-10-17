@@ -147,6 +147,12 @@
           "relaxed": "1.625",
           "loose": "2"
         }
+      },
+      "spacing": {
+        "small": "0.625rem",
+        "medium": "1rem",
+        "large": "1.5rem",
+        "x-large": "2rem"
       }
     }
   },
@@ -160,13 +166,21 @@
       "background": "var(--wp--preset--color--background)",
       "text": "var(--wp--preset--color--foreground)"
     },
+    "spacing": {
+      "padding": {
+        "top": "var(--wp--custom--spacing--x-large)",
+        "left": "0",
+        "bottom": "var(--wp--custom--spacing--x-large)",
+        "right": "0"
+      }
+    },
     "blocks": {
       "core/paragraph": {
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "left": "0",
-            "bottom": "1.5rem",
+            "bottom": "var(--wp--custom--spacing--large)",
             "right": "0"
           }
         }
@@ -174,10 +188,38 @@
       "core/image": {
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "left": "0",
-            "bottom": "1.5rem",
+            "bottom": "var(--wp--custom--spacing--large)",
             "right": "0"
+          }
+        }
+      },
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontWeight": "600",
+          "lineHeight": "0",
+          "fontSize": "var(--wp--preset--font-size--medium)",
+          "textTransform": "uppercase"
+        },
+        "elements": {
+          "link": {
+            "typography": {
+              "textDecoration": "none"
+            },
+            "color": {
+              "text": "white",
+              "background": "var(--wp--preset--color--primary)"
+            },
+            "spacing": {
+              "padding": {
+                "top": "var(--wp--custom--spacing--small)",
+                "left": "var(--wp--custom--spacing--medium)",
+                "bottom": "var(--wp--custom--spacing--small)",
+                "right": "var(--wp--custom--spacing--medium)"
+              }
+            }
           }
         }
       }
@@ -195,9 +237,9 @@
         },
         "spacing": {
           "margin": {
-            "top": "2rem",
+            "top": "var(--wp--custom--spacing--x-large)",
             "right": "0",
-            "bottom": "2rem",
+            "bottom": "var(--wp--custom--spacing--x-large)",
             "left": "0"
           }
         }
@@ -214,9 +256,9 @@
         },
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "right": "0",
-            "bottom": "1.5rem",
+            "bottom": "var(--wp--custom--spacing--large)",
             "left": "0"
           }
         }
@@ -233,9 +275,9 @@
         },
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "right": "0",
-            "bottom": "1.5",
+            "bottom": "var(--wp--custom--spacing--large)",
             "left": "0"
           }
         }
@@ -252,9 +294,9 @@
         },
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "right": "0",
-            "bottom": "1.5rem",
+            "bottom": "var(--wp--custom--spacing--large)",
             "left": "0"
           }
         }
@@ -271,9 +313,9 @@
         },
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "right": "0",
-            "bottom": "1.5rem",
+            "bottom": "var(--wp--custom--spacing--large)",
             "left": "0"
           }
         }
@@ -290,9 +332,9 @@
         },
         "spacing": {
           "margin": {
-            "top": "1.5rem",
+            "top": "var(--wp--custom--spacing--large)",
             "right": "0",
-            "bottom": "1.5rem",
+            "bottom": "var(--wp--custom--spacing--large)",
             "left": "0"
           }
         }
@@ -304,6 +346,13 @@
       }
     }
   },
+  "customTemplates": [
+    {
+      "name": "blank",
+      "title": "Blank",
+      "postTypes": ["page", "post"]
+    }
+  ],
   "templateParts": [
     {
       "name": "header",
