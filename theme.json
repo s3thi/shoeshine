@@ -121,6 +121,10 @@
         }
       ]
     },
+    "layout": {
+      "contentSize": "48rem",
+      "wideSize": "64rem"
+    },
     "custom": {
       "typography": {
         "font-size": {
