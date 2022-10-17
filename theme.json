@@ -170,6 +170,16 @@
             "right": "0"
           }
         }
+      },
+      "core/image": {
+        "spacing": {
+          "margin": {
+            "top": "1.5rem",
+            "left": "0",
+            "bottom": "1.5rem",
+            "right": "0"
+          }
+        }
       }
     },
     "elements": {
