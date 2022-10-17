@@ -1,21 +1,21 @@
 <?php
 /**
- * Chanda functions and definitions
+ * Shoeshine functions and definitions
  *
  * @package WordPress
- * @subpackage Chanda
- * @since Chanda 1.0
+ * @subpackage Shoeshine
+ * @since Shoeshine 1.0
  */
 
-if ( ! function_exists( 'chanda_support' ) ) {
+if ( ! function_exists( 'shoeshine_support' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @since Chanda 1.0
+	 * @since Shoeshine 1.0
 	 *
 	 * @return void
 	 */
-	function chanda_support() {
+	function shoeshine_support() {
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
 
@@ -24,31 +24,31 @@ if ( ! function_exists( 'chanda_support' ) ) {
 	}
 }
 
-add_action( 'after_setup_theme', 'chanda_support' );
+add_action( 'after_setup_theme', 'shoeshine_support' );
 
-if ( ! function_exists( 'chanda_styles' ) ) {
+if ( ! function_exists( 'shoeshine_styles' ) ) {
 	/**
 	 * Enqueue styles.
 	 *
-	 * @since Chanda 1.0
+	 * @since Shoeshine 1.0
 	 *
 	 * @return void
 	 */
-	function chanda_styles() {
+	function shoeshine_styles() {
 		// Register theme stylesheet.
 		$theme_version = wp_get_theme()->get( 'Version' );
 
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 		wp_register_style(
-			'chanda-style',
+			'shoeshine-style',
 			get_template_directory_uri() . '/style.css',
 			array(),
 			$version_string
 		);
 
 		// Enqueue theme stylesheet.
-		wp_enqueue_style( 'chanda-style' );
+		wp_enqueue_style( 'shoeshine-style' );
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'chanda_styles' );
+add_action( 'wp_enqueue_scripts', 'shoeshine_styles' );
