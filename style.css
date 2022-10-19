@@ -16,3 +16,16 @@ Tags: full-site-editing
 Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
+
+ul {
+  list-style-type: "›";
+}
+
+ul li {
+  padding-inline-start: 1ch;
+}
+
+li::marker {
+  font-weight: bold;
+  color: var(--wp--preset--color--primary);
+}
