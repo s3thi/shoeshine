@@ -153,7 +153,8 @@
         "medium": "1rem",
         "large": "1.5rem",
         "x-large": "2rem",
-        "2-x-large": "2.5rem"
+        "2-x-large": "2.5rem",
+        "3-x-large": "4rem"
       }
     }
   },
