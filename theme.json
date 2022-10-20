@@ -201,7 +201,6 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
           "fontWeight": "600",
-          "lineHeight": "0",
           "fontSize": "var(--wp--preset--font-size--medium)",
           "textTransform": "uppercase"
         },
