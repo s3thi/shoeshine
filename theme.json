@@ -174,7 +174,10 @@
         "2-x-large": "2.5rem",
         "3-x-large": "3rem",
         "4-x-large": "3.5rem",
-        "5-x-large": "4rem"
+        "5-x-large": "4rem",
+        "6-x-large": "4.5rem",
+        "7-x-large": "5rem",
+        "8-x-large": "6rem"
       }
     }
   },
