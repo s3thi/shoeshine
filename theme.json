@@ -257,6 +257,12 @@
             "right": "0"
           }
         }
+      },
+      "core/code": {
+        "color": {
+          "background": "var(--wp--preset--color--tertiary)",
+          "text": "white"
+        }
       }
     },
     "elements": {
