@@ -89,3 +89,7 @@ li:not(:first-child, .wp-block-navigation-item) {
 p.has-background {
   padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
 }
+
+.wp-block-quote.is-style-default {
+  border-left-color: var(--wp--preset--color--primary-light);
+}

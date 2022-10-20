@@ -244,6 +244,16 @@
             "right": "0"
           }
         }
+      },
+      "core/quote": {
+        "spacing": {
+          "margin": {
+            "top": "var(--wp--custom--spacing--large)",
+            "left": "0",
+            "bottom": "var(--wp--custom--spacing--large)",
+            "right": "0"
+          }
+        }
       }
     },
     "elements": {
