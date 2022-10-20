@@ -17,6 +17,25 @@ Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
 
+a {
+  text-decoration-color: var(--wp--preset--color--primary-light);
+  text-decoration-thickness: 0.25ch;
+  text-underline-offset: 0.25ch;
+}
+
+a:hover {
+  text-decoration-color: var(--wp--preset--color--primary);
+}
+
+:is(h1, h2, h3, h4, h5, h6) a {
+  text-decoration: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6) a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--wp--preset--color--primary);
+}
+
 ul,
 .wp-block-latest-posts.wp-block-latest-posts__list {
   list-style-type: "›";

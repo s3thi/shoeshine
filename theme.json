@@ -112,6 +112,11 @@
           "name": "Primary"
         },
         {
+          "slug": "primary-light",
+          "color": "#BD9CF6",
+          "name": "Primary Light"
+        },
+        {
           "slug": "secondary",
           "color": "#DB2777",
           "name": "Secondary"
