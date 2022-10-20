@@ -19,6 +19,11 @@ Shoeshine is distributed under the terms of the GNU GPL.
 
 /* Basic HTML element styles that Gutenberg doesn't support yet. */
 
+::selection {
+  background-color: var(--wp--preset--color--primary);
+  color: white;
+}
+
 a {
   text-decoration-color: var(--wp--preset--color--primary-light);
   text-decoration-thickness: 0.25ch;
