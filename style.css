@@ -17,17 +17,23 @@ Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
 
-ul {
+ul,
+.wp-block-latest-posts.wp-block-latest-posts__list {
   list-style-type: "›";
+  padding-left: var(--wp--custom--spacing--small);
 }
 
-ul li {
+ul:not(.wp-block-post-template) li {
   padding-inline-start: 1ch;
 }
 
 li::marker {
   font-weight: bold;
   color: var(--wp--preset--color--primary);
+}
+
+li:not(:first-child, .wp-block-navigation-item) {
+  margin-top: var(--wp--custom--spacing--medium);
 }
 
 /* We want to make the left/right arrows in the previous/next post block larger. */
