@@ -161,12 +161,15 @@
         }
       },
       "spacing": {
+        "x-small": "0.5rem",
         "small": "0.625rem",
         "medium": "1rem",
         "large": "1.5rem",
         "x-large": "2rem",
         "2-x-large": "2.5rem",
-        "3-x-large": "4rem"
+        "3-x-large": "3rem",
+        "4-x-large": "3.5rem",
+        "5-x-large": "4rem"
       }
     }
   },
