@@ -29,3 +29,7 @@ li::marker {
   font-weight: bold;
   color: var(--wp--preset--color--primary);
 }
+
+.post-navigation-link__label {
+  font-size: 1.5rem;
+}
