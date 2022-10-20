@@ -121,6 +121,18 @@
           "color": "#4B5563",
           "name": "Tertiary"
         }
+      ],
+      "gradients": [
+        {
+          "slug": "horizontal-primary-to-secondary",
+          "gradient": "linear-gradient(to right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--secondary) 100%)",
+          "name": "Horizontal primary to secondary"
+        },
+        {
+          "slug": "horizontal-secondary-to-primary",
+          "gradient": "linear-gradient(to right,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--primary) 100%)",
+          "name": "Horizontal secondary to primary"
+        }
       ]
     },
     "layout": {
@@ -210,16 +222,7 @@
               "textDecoration": "none"
             },
             "color": {
-              "text": "white",
-              "background": "var(--wp--preset--color--primary)"
-            },
-            "spacing": {
-              "padding": {
-                "top": "var(--wp--custom--spacing--small)",
-                "left": "var(--wp--custom--spacing--medium)",
-                "bottom": "var(--wp--custom--spacing--small)",
-                "right": "var(--wp--custom--spacing--medium)"
-              }
+              "text": "white"
             }
           }
         }

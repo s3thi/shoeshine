@@ -51,3 +51,7 @@ li:not(:first-child, .wp-block-navigation-item) {
   background-color: var(--wp--preset--color--tertiary);
   padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
 }
+
+p.has-background {
+  padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
+}
