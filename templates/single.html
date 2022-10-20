@@ -16,42 +16,42 @@
     <header class="wp-block-group">
       <!-- wp:post-title {"level":1} /-->
 
-      <!-- wp:post-date /-->
-    </header>
-    <!-- /wp:group -->
+      <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"medium"} -->
+      <div class="wp-block-group has-medium-font-size">
+        <!-- wp:post-date /-->
 
-    <!-- wp:post-content {"layout":{"inherit":true}} /-->
-
-    <!-- wp:group {"layout":{"inherit":true},"fontSize":"medium","style":{"spacing":{"margin":{"top":"var(--wp--custom--spacing--5-x-large)","right":"0","bottom":"0","left":"0"}}}} -->
-    <div
-      class="wp-block-group has-medium-font-size"
-      style="
-        margin-top: var(--wp--custom--spacing--5-x-large);
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-      "
-    >
-      <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-      <div class="wp-block-group">
-        <!-- wp:paragraph -->
-        <p>Filed under:</p>
+        <!-- wp:paragraph {"align":"center"} -->
+        <p class="has-text-align-center">•</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:post-terms {"term":"category"} /-->
       </div>
       <!-- /wp:group -->
+    </header>
+    <!-- /wp:group -->
 
-      <!-- wp:group {"style":{"spacing":{"margin":{"top":"var(--wp--custom--spacing--large)","right":"0","bottom":"0","left":"0"}}}} -->
-      <div
-        class="wp-block-group"
-        style="
-          margin-top: var(--wp--custom--spacing--large);
-          margin-right: 0;
-          margin-bottom: 0;
-          margin-left: 0;
-        "
-      >
+    <!-- wp:spacer {"height":"var(--wp--custom--spacing--small)"} -->
+    <div
+      style="height: var(--wp--custom--spacing--small)"
+      aria-hidden="true"
+      class="wp-block-spacer"
+    ></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:post-content {"layout":{"inherit":true}} /-->
+
+    <!-- wp:spacer {"height":"var(--wp--custom--spacing--x-large)"} -->
+    <div
+      style="height: var(--wp--custom--spacing--x-large)"
+      aria-hidden="true"
+      class="wp-block-spacer"
+    ></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:group {"layout":{"inherit":true},"fontSize":"medium"} -->
+    <div class="wp-block-group has-medium-font-size">
+      <!-- wp:group -->
+      <div class="wp-block-group">
         <!-- wp:post-navigation-link {"type":"previous","label":"⟵ ","showTitle":true,"linkLabel":false} /-->
 
         <!-- wp:post-navigation-link {"textAlign":"left","label":"⟶ ","showTitle":true,"linkLabel":false} /-->

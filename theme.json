@@ -234,6 +234,16 @@
             }
           }
         }
+      },
+      "core/post-title": {
+        "spacing": {
+          "margin": {
+            "top": "var(--wp--custom--spacing--x-large)",
+            "left": "0",
+            "bottom": "var(--wp--custom--spacing--small)",
+            "right": "0"
+          }
+        }
       }
     },
     "elements": {
