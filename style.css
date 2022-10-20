@@ -17,6 +17,8 @@ Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
 
+/* Basic HTML element styles that Gutenberg doesn't support yet. */
+
 a {
   text-decoration-color: var(--wp--preset--color--primary-light);
   text-decoration-thickness: 0.25ch;
@@ -54,6 +56,19 @@ li::marker {
 li:not(:first-child, .wp-block-navigation-item) {
   margin-top: var(--wp--custom--spacing--medium);
 }
+
+/* Separator/<hr> styles. */
+
+.wp-block-separator {
+  margin: var(--wp--custom--spacing--3-x-large) 0;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100%;
+}
+
+/* Block-specific overrides. */
 
 /* We want to make the left/right arrows in the previous/next post block larger. */
 .post-navigation-link__label {
