@@ -75,6 +75,17 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	// List.
+	register_block_style(
+		'core/list',
+		array(
+			'name'         => 'shoeshine-default-list',
+			'label'        => __( 'Default', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+			'is_default'   => true,
+		)
+	);
+
 }
 
 add_action( 'init', 'shoeshine_register_block_styles' );

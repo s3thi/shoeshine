@@ -17,12 +17,22 @@ Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
 
-/* Basic HTML element styles that Gutenberg doesn't support yet. */
+/* -------------------------------------------------------------------------- */
+/*               Basic styles that Gutenberg doesn't support yet              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                  Selection                                 */
+/* -------------------------------------------------------------------------- */
 
 ::selection {
   background-color: var(--wp--preset--color--primary);
   color: white;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    Links                                   */
+/* -------------------------------------------------------------------------- */
 
 a {
   text-decoration-color: var(--wp--preset--color--primary-light);
@@ -47,34 +57,21 @@ a:hover {
   text-decoration-color: var(--wp--preset--color--primary);
 }
 
-ul {
-  list-style-type: "›";
-  padding-left: var(--wp--custom--spacing--small);
-}
+/* -------------------------------------------------------------------------- */
+/*                          Block-specific overrides                          */
+/* -------------------------------------------------------------------------- */
 
-ul:not(.wp-block-post-template) li {
-  padding-inline-start: 1ch;
-}
+/* -------------------------------------------------------------------------- */
+/*                            Post navigation link                            */
+/* -------------------------------------------------------------------------- */
 
-li::marker {
-  font-weight: bold;
-  color: var(--wp--preset--color--primary);
-}
-
-li:not(:first-child, .wp-block-navigation-item) {
-  margin-top: var(--wp--custom--spacing--medium);
-}
-
-/* Block-specific overrides. */
-
-/* We want to make the left/right arrows in the previous/next post block larger. */
 .post-navigation-link__label {
   font-size: 1.5rem;
 }
 
-p.has-background {
-  padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
-}
+/* -------------------------------------------------------------------------- */
+/*                                 Blockquote                                 */
+/* -------------------------------------------------------------------------- */
 
 .wp-block-quote.is-style-default {
   border-left-color: var(--wp--preset--color--primary-light);

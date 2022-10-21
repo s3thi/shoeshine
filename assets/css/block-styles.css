@@ -110,3 +110,27 @@ hr.is-style-shoeshine-separator-line {
   width: 30% !important;
   max-width: 8rem;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    List                                    */
+/* -------------------------------------------------------------------------- */
+
+ul.is-style-shoeshine-default-list {
+  list-style-type: "›";
+  padding-left: var(--wp--custom--spacing--small);
+}
+
+ul.is-style-shoeshine-default-list li {
+  padding-inline-start: 1ch;
+}
+
+ul.is-style-shoeshine-default-list li::marker,
+ol.is-style-shoeshine-default-list li::marker {
+  font-weight: bold;
+  color: var(--wp--preset--color--primary);
+}
+
+ul.is-style-shoeshine-default-list li:not(:first-child),
+ol.is-style-shoeshine-default-list li:not(:first-child) {
+  margin-top: var(--wp--custom--spacing--medium);
+}
