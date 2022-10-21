@@ -59,10 +59,19 @@ function shoeshine_register_block_styles() {
 	register_block_style(
 		'core/separator',
 		array(
+			'name'         => 'shoeshine-separator-default',
+			'label'        => __( 'Default', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+			'is_default'   => true,
+		)
+	);
+
+	register_block_style(
+		'core/separator',
+		array(
 			'name'         => 'shoeshine-separator-dots',
 			'label'        => __( 'Dots', 'shoeshine' ),
 			'style_handle' => 'shoeshine-block-styles',
-			'is_default'   => true,
 		)
 	);
 
@@ -79,10 +88,19 @@ function shoeshine_register_block_styles() {
 	register_block_style(
 		'core/list',
 		array(
-			'name'         => 'shoeshine-default-list',
+			'name'         => 'shoeshine-list-default',
 			'label'        => __( 'Default', 'shoeshine' ),
 			'style_handle' => 'shoeshine-block-styles',
 			'is_default'   => true,
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'         => 'shoeshine-list-impact',
+			'label'        => __( 'Impact', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
 		)
 	);
 

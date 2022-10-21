@@ -48,7 +48,6 @@
 /* -------------------------------------------------------------------------- */
 
 .is-style-shoeshine-site-title-elegant {
-  font-size: inherit;
   font-weight: 700;
   font-family: var(--wp--preset--font-family--libre-franklin);
 }
@@ -75,6 +74,19 @@
 .is-style-shoeshine-latest-posts-bulleted-list {
   list-style-type: "›" !important;
   padding-left: var(--wp--custom--spacing--small) !important;
+}
+
+.is-style-shoeshine-latest-posts-bulleted-list li {
+  padding-inline-start: 1ch;
+}
+
+.is-style-shoeshine-latest-posts-bulleted-list li::marker {
+  font-weight: bold;
+  color: var(--wp--preset--color--primary);
+}
+
+.is-style-shoeshine-latest-posts-bulleted-list li:not(:first-child) {
+  margin-top: var(--wp--custom--spacing--medium);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -115,23 +127,23 @@ hr.is-style-shoeshine-separator-line {
 /*                                    List                                    */
 /* -------------------------------------------------------------------------- */
 
-ul.is-style-shoeshine-default-list {
+ul.is-style-shoeshine-list-impact {
   list-style-type: "›";
-  padding-left: var(--wp--custom--spacing--small);
+  padding-inline-start: var(--wp--custom--spacing--small);
 }
 
-ul.is-style-shoeshine-default-list li {
+ul.is-style-shoeshine-list-impact li {
   padding-inline-start: 1ch;
 }
 
-ul.is-style-shoeshine-default-list li::marker,
-ol.is-style-shoeshine-default-list li::marker {
+ul.is-style-shoeshine-list-impact li::marker,
+ol.is-style-shoeshine-list-impact li::marker {
   font-weight: bold;
   color: var(--wp--preset--color--primary);
 }
 
-ul.is-style-shoeshine-default-list li:not(:first-child),
-ol.is-style-shoeshine-default-list li:not(:first-child) {
+ul.is-style-shoeshine-list-impact li:not(:first-child),
+ol.is-style-shoeshine-list-impact li:not(:first-child) {
   margin-top: var(--wp--custom--spacing--medium);
 }
 
