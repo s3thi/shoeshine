@@ -7,11 +7,11 @@
  * @since Shoeshine 1.0
  */
 
- /**
-  * The theme version.
-  *
-  * @since 1.0.0
-  */
+/**
+ * The theme version.
+ *
+ * @since 1.0.0
+ */
 define( 'SHOESHINE_VERSION', wp_get_theme()->get( 'Version' ) );
 
 if ( ! function_exists( 'shoeshine_support' ) ) {
