@@ -7,6 +7,13 @@
  * @since Shoeshine 1.0
  */
 
+ /**
+  * The theme version.
+  *
+  * @since 1.0.0
+  */
+define( 'SHOESHINE_VERSION', wp_get_theme()->get( 'Version' ) );
+
 if ( ! function_exists( 'shoeshine_support' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -36,15 +43,11 @@ if ( ! function_exists( 'shoeshine_styles' ) ) {
 	 */
 	function shoeshine_styles() {
 		// Register theme stylesheet.
-		$theme_version = wp_get_theme()->get( 'Version' );
-
-		$version_string = is_string( $theme_version ) ? $theme_version : false;
-
 		wp_register_style(
 			'shoeshine-style',
 			get_template_directory_uri() . '/style.css',
 			array(),
-			$version_string
+			SHOESHINE_VERSION
 		);
 
 		// Enqueue theme stylesheet.

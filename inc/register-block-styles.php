@@ -15,18 +15,17 @@
  */
 function shoeshine_register_block_styles() {
 	$block_styles_handle = 'shoeshine-block-styles';
-	$theme_version       = wp_get_theme()->get( 'Version' );
-	$version_string      = is_string( $theme_version ) ? $theme_version : false;
 
 	wp_register_style(
 		$block_styles_handle,
 		get_template_directory_uri() . '/assets/css/block-styles.css',
 		array(),
-		$version_string
+		SHOESHINE_VERSION
 	);
 
 	wp_enqueue_style( $block_styles_handle );
 
+	// Navigation.
 	register_block_style(
 		'core/navigation',
 		array(
@@ -36,6 +35,7 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	// Site title.
 	register_block_style(
 		'core/site-title',
 		array(
@@ -45,6 +45,7 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	// Latest posts.
 	register_block_style(
 		'core/latest-posts',
 		array(
@@ -54,6 +55,45 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	// Separator.
+	register_block_style(
+		'core/separator',
+		array(
+			'name'         => 'shoeshine-separator-dots',
+			'label'        => __( 'Dots', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+			'is_default'   => true,
+		)
+	);
+
+	register_block_style(
+		'core/separator',
+		array(
+			'name'         => 'shoeshine-separator-line',
+			'label'        => __( 'Line', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+		)
+	);
+
 }
 
 add_action( 'init', 'shoeshine_register_block_styles' );
+
+/**
+ * Unregister block styles.
+ *
+ * @since 1.0.1
+ *
+ * @return void
+ */
+function shoeshine_unregister_block_style() {
+	wp_enqueue_script(
+		'shoeshine-unregister',
+		get_stylesheet_directory_uri() . '/assets/js/unregister.js',
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
+		SHOESHINE_VERSION,
+		true
+	);
+}
+
+add_action( 'enqueue_block_editor_assets', 'shoeshine_unregister_block_style' );

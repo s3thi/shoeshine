@@ -72,8 +72,41 @@
 /*                                Latest posts                                */
 /* -------------------------------------------------------------------------- */
 
-/* I don't want to use !important here, but I see no other way to do this. */
 .is-style-shoeshine-latest-posts-bulleted-list {
   list-style-type: "›" !important;
   padding-left: var(--wp--custom--spacing--small) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Separator                                 */
+/* -------------------------------------------------------------------------- */
+
+hr.is-style-shoeshine-separator-dots {
+  margin: var(--wp--custom--spacing--3-x-large) 0;
+}
+
+hr.is-style-shoeshine-separator-dots {
+  background: none;
+  border: none;
+  text-align: center;
+  line-height: 1;
+  height: auto;
+}
+
+hr.is-style-shoeshine-separator-dots::before {
+  content: "···";
+  white-space: nowrap;
+  color: var(--wp--preset--color--tertiary);
+  font-size: var(--wp--custom--typography--font-size--3-x-large);
+  font-weight: bold;
+  letter-spacing: var(--wp--custom--spacing--large);
+  font-family: var(--wp--preset--font-family--lora);
+  padding-left: 1rem;
+}
+
+hr.is-style-shoeshine-separator-line {
+  margin: calc(var(--wp--custom--spacing--3-x-large) + 1rem) 0;
+  border-color: var(--wp--preset--color--tertiary);
+  width: 30% !important;
+  max-width: 8rem;
 }

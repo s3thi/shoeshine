@@ -65,17 +65,6 @@ li:not(:first-child, .wp-block-navigation-item) {
   margin-top: var(--wp--custom--spacing--medium);
 }
 
-/* Separator/<hr> styles. */
-
-.wp-block-separator {
-  margin: var(--wp--custom--spacing--3-x-large) 0;
-  border-color: var(--wp--preset--color--foreground);
-}
-
-.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-  width: 100%;
-}
-
 /* Block-specific overrides. */
 
 /* We want to make the left/right arrows in the previous/next post block larger. */
