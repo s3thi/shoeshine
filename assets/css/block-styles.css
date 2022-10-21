@@ -1,0 +1,32 @@
+/* Header navigation styles. */
+
+.is-style-shoeshine-header-navigation,
+.is-style-shoeshine-header-navigation
+  .wp-block-navigation__responsive-container-open {
+  text-transform: uppercase;
+  font-family: var(--wp--preset--font-family--libre-franklin);
+  font-weight: 500;
+  font-size: var(--wp--preset--font-size--normal);
+}
+
+.is-style-shoeshine-header-navigation {
+  color: var(--wp--preset--color--tertiary);
+}
+
+.is-style-shoeshine-header-navigation
+  .wp-block-navigation__responsive-container-open {
+  color: var(--wp--preset--color--background);
+  background-color: var(--wp--preset--color--tertiary);
+  padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
+}
+
+.is-style-shoeshine-header-navigation a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--wp--preset--color--primary);
+  text-decoration-thickness: var(
+    --wp--custom--typography--text-decoration--thickness--normal
+  );
+  text-underline-offset: var(
+    --wp--custom--typography--text-decoration--offset--normal
+  );
+}

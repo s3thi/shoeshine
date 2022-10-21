@@ -26,8 +26,12 @@ Shoeshine is distributed under the terms of the GNU GPL.
 
 a {
   text-decoration-color: var(--wp--preset--color--primary-light);
-  text-decoration-thickness: 0.25ch;
-  text-underline-offset: 0.25ch;
+  text-decoration-thickness: var(
+    --wp--custom--typography--text-decoration--thickness--normal
+  );
+  text-underline-offset: var(
+    --wp--custom--typography--text-decoration--offset--normal
+  );
 }
 
 a:hover {
@@ -78,17 +82,6 @@ li:not(:first-child, .wp-block-navigation-item) {
 /* We want to make the left/right arrows in the previous/next post block larger. */
 .post-navigation-link__label {
   font-size: 1.5rem;
-}
-
-/* We want to add additional styles to the button that opens the responsive menu. */
-.wp-block-navigation__responsive-container-open {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: var(--wp--preset--typography--font-size--medium);
-  font-family: var(--wp--preset--font-family--libre-franklin);
-  color: white;
-  background-color: var(--wp--preset--color--tertiary);
-  padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
 }
 
 p.has-background {

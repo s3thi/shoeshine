@@ -39,6 +39,7 @@ if ( ! function_exists( 'shoeshine_styles' ) ) {
 		$theme_version = wp_get_theme()->get( 'Version' );
 
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
+
 		wp_register_style(
 			'shoeshine-style',
 			get_template_directory_uri() . '/style.css',
