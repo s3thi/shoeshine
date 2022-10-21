@@ -86,6 +86,26 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	// Post navigation link.
+	register_block_style(
+		'core/post-navigation-link',
+		array(
+			'name'         => 'shoeshine-post-navigation-link-default',
+			'label'        => __( 'Default', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+			'is_default'   => true,
+		)
+	);
+
+	register_block_style(
+		'core/post-navigation-link',
+		array(
+			'name'         => 'shoeshine-post-navigation-link-large-label',
+			'label'        => __( 'Large label', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+		)
+	);
+
 }
 
 add_action( 'init', 'shoeshine_register_block_styles' );
