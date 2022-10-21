@@ -157,3 +157,11 @@ ol.is-style-shoeshine-list-impact li:not(:first-child) {
   font-weight: 700;
   color: var(--wp--preset--color--primary);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    Quote                                   */
+/* -------------------------------------------------------------------------- */
+
+.is-style-shoeshine-quote-impact {
+  border-left-color: var(--wp--preset--color--primary-light) !important;
+}

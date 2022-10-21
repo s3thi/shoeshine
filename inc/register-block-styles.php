@@ -124,6 +124,16 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	// Quote.
+	register_block_style(
+		'core/quote',
+		array(
+			'name'         => 'shoeshine-quote-impact',
+			'label'        => __( 'Impact', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+		)
+	);
+
 }
 
 add_action( 'init', 'shoeshine_register_block_styles' );

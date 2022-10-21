@@ -56,15 +56,3 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: var(--wp--preset--color--primary);
 }
-
-/* -------------------------------------------------------------------------- */
-/*                          Block-specific overrides                          */
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-/*                                 Blockquote                                 */
-/* -------------------------------------------------------------------------- */
-
-.wp-block-quote.is-style-default {
-  border-left-color: var(--wp--preset--color--primary-light);
-}
