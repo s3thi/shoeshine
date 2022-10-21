@@ -47,8 +47,7 @@ a:hover {
   text-decoration-color: var(--wp--preset--color--primary);
 }
 
-ul,
-.wp-block-latest-posts.wp-block-latest-posts__list {
+ul {
   list-style-type: "›";
   padding-left: var(--wp--custom--spacing--small);
 }

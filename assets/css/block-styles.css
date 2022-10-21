@@ -1,4 +1,6 @@
-/* Header navigation styles. */
+/* -------------------------------------------------------------------------- */
+/*                              Header navigation                             */
+/* -------------------------------------------------------------------------- */
 
 .is-style-shoeshine-header-navigation,
 .is-style-shoeshine-header-navigation
@@ -41,7 +43,10 @@
   );
 }
 
-/* Site title styles. */
+/* -------------------------------------------------------------------------- */
+/*                                 Site title                                 */
+/* -------------------------------------------------------------------------- */
+
 .is-style-shoeshine-site-title-elegant {
   font-size: inherit;
   font-weight: 700;
@@ -61,4 +66,14 @@
   text-underline-offset: var(
     --wp--custom--typography--text-decoration--offset--normal
   );
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Latest posts                                */
+/* -------------------------------------------------------------------------- */
+
+/* I don't want to use !important here, but I see no other way to do this. */
+.is-style-shoeshine-latest-posts-bulleted-list {
+  list-style-type: "›" !important;
+  padding-left: var(--wp--custom--spacing--small) !important;
 }

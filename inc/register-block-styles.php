@@ -45,6 +45,15 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	register_block_style(
+		'core/latest-posts',
+		array(
+			'name'         => 'shoeshine-latest-posts-bulleted-list',
+			'label'        => __( 'Bulleted list', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+		)
+	);
+
 }
 
 add_action( 'init', 'shoeshine_register_block_styles' );
