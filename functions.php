@@ -52,3 +52,9 @@ if ( ! function_exists( 'shoeshine_styles' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'shoeshine_styles' );
+
+// Filters.
+require_once get_theme_file_path( 'inc/filters.php' );
+
+// Block styles.
+require_once get_theme_file_path( 'inc/register-block-styles.php' );
