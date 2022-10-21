@@ -36,6 +36,15 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
+	register_block_style(
+		'core/site-title',
+		array(
+			'name'         => 'shoeshine-site-title-elegant',
+			'label'        => __( 'Elegant', 'shoeshine' ),
+			'style_handle' => 'shoeshine-block-styles',
+		)
+	);
+
 }
 
 add_action( 'init', 'shoeshine_register_block_styles' );
