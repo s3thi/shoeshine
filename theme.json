@@ -379,8 +379,7 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
           "fontSize": "var(--wp--preset--font-size--medium)",
-          "fontWeight": "500",
-          "textTransform": "uppercase"
+          "fontWeight": "500"
         },
         "spacing": {
           "padding": {
