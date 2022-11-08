@@ -117,26 +117,14 @@
           "name": "Primary Light"
         },
         {
-          "slug": "secondary",
-          "color": "#DB2777",
-          "name": "Secondary"
+          "slug": "primary-dark",
+          "color": "#5b21b6",
+          "name": "Primary Dark"
         },
         {
           "slug": "tertiary",
           "color": "#4B5563",
           "name": "Tertiary"
-        }
-      ],
-      "gradients": [
-        {
-          "slug": "horizontal-primary-to-secondary",
-          "gradient": "linear-gradient(to right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--secondary) 100%)",
-          "name": "Horizontal primary to secondary"
-        },
-        {
-          "slug": "horizontal-secondary-to-primary",
-          "gradient": "linear-gradient(to right,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--primary) 100%)",
-          "name": "Horizontal secondary to primary"
         }
       ]
     },
@@ -174,6 +162,7 @@
         }
       },
       "spacing": {
+        "2-x-small": "0.25rem",
         "x-small": "0.5rem",
         "small": "0.625rem",
         "medium": "1rem",
@@ -186,6 +175,11 @@
         "6-x-large": "4.5rem",
         "7-x-large": "5rem",
         "8-x-large": "6rem"
+      },
+      "border": {
+        "radius": {
+          "medium": "4px"
+        }
       }
     }
   },
@@ -376,6 +370,34 @@
       "link": {
         "color": {
           "text": "var(--wp--preset--color--foreground-dark)"
+        }
+      },
+      "button": {
+        "border": {
+          "radius": "var(--wp--custom--border--radius--medium)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+          "fontSize": "var(--wp--preset--font-size--medium)",
+          "fontWeight": "500",
+          "textTransform": "uppercase"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var(--wp--custom--spacing--small)",
+            "left": "var(--wp--custom--spacing--medium)",
+            "bottom": "var(--wp--custom--spacing--small)",
+            "right": "var(--wp--custom--spacing--medium)"
+          }
+        },
+        "color": {
+          "background": "var(--wp--preset--color--primary)",
+          "text": "var(--wp--preset--color--background)"
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--wp--preset--color--primary-dark)"
+          }
         }
       }
     }

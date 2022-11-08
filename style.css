@@ -56,3 +56,54 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: var(--wp--preset--color--primary);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Inputs                                   */
+/* -------------------------------------------------------------------------- */
+
+input[type="text"],
+input[type="search"],
+input[type="email"] {
+  font-size: var(--wp--preset--font-size--normal);
+  font-family: var(--wp--preset--font-family--libre-franklin);
+  padding: var(--wp--custom--spacing--2-x-small)
+    var(--wp--custom--spacing--x-small);
+  border-radius: var(--wp--custom--border--radius--medium);
+  border: solid 1px var(--wp--preset--color--foreground);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Buttons                                  */
+/* -------------------------------------------------------------------------- */
+
+/* Can't control button borders, paddings, and hover styles properly using
+   only theme.json. */
+
+/* Button with fill. */
+.wp-element-button,
+.wp-block-button__link {
+  border: solid 1px var(--wp--preset--color--foreground);
+}
+
+/* Button with outline. */
+.wp-block-button.is-style-outline > .wp-block-button__link,
+.wp-block-button .wp-block-button__link.is-style-outline {
+  border: solid 1px var(--wp--preset--color--foreground);
+  padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
+}
+
+/* Hover style for button with outline. */
+.wp-block-button.is-style-outline
+  > .wp-block-button__link:not(.has-text-color):hover,
+.wp-block-button
+  .wp-block-button__link.is-style-outline:not(.has-text-color):hover {
+  color: var(--wp--preset--color--primary);
+}
+
+/* Hover style for button with outline. */
+.wp-block-button.is-style-outline
+  > .wp-block-button__link:not(.has-background):hover,
+.wp-block-button
+  .wp-block-button__link.is-style-outline:not(.has-background):hover {
+  border: solid 1px var(--wp--preset--color--primary);
+}
