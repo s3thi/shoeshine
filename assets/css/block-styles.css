@@ -109,7 +109,7 @@ hr.is-style-shoeshine-separator-dots::before {
   content: "···";
   white-space: nowrap;
   color: var(--wp--preset--color--tertiary);
-  font-size: var(--wp--custom--typography--font-size--3-x-large);
+  font-size: var(--wp--preset--font-size--x-large);
   font-weight: bold;
   letter-spacing: var(--wp--custom--spacing--large);
   font-family: var(--wp--preset--font-family--lora);
@@ -153,7 +153,6 @@ ol.is-style-shoeshine-list-impact li:not(:first-child) {
 
 .is-style-shoeshine-post-navigation-link-large-label
   .post-navigation-link__label {
-  font-size: var(--wp--custom--typography--font-size--2-x-large);
   font-weight: 700;
   color: var(--wp--preset--color--primary);
 }
