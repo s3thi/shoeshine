@@ -8,7 +8,7 @@
   text-transform: uppercase;
   font-family: var(--wp--preset--font-family--libre-franklin);
   font-weight: 500;
-  font-size: var(--wp--preset--font-size--normal);
+  font-size: var(--wp--preset--font-size--small);
 }
 
 .is-style-shoeshine-header-navigation {
@@ -48,6 +48,7 @@
 /* -------------------------------------------------------------------------- */
 
 .is-style-shoeshine-site-title-elegant {
+  font-size: var(--wp--preset--font-size--medium);
   font-weight: 700;
   font-family: var(--wp--preset--font-family--libre-franklin);
 }
