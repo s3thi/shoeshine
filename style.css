@@ -35,26 +35,9 @@ Shoeshine is distributed under the terms of the GNU GPL.
 /* -------------------------------------------------------------------------- */
 
 a {
-  text-decoration-color: var(--wp--preset--color--primary-light);
-  text-decoration-thickness: var(
-    --wp--custom--typography--text-decoration--thickness--normal
-  );
   text-underline-offset: var(
     --wp--custom--typography--text-decoration--offset--normal
   );
-}
-
-a:hover {
-  text-decoration-color: var(--wp--preset--color--primary);
-}
-
-:is(h1, h2, h3, h4, h5, h6) a {
-  text-decoration: none;
-}
-
-:is(h1, h2, h3, h4, h5, h6) a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--wp--preset--color--primary);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -66,10 +49,9 @@ input[type="search"],
 input[type="email"] {
   font-size: var(--wp--preset--font-size--normal);
   font-family: var(--wp--preset--font-family--libre-franklin);
-  padding: var(--wp--custom--spacing--2-x-small)
-    var(--wp--custom--spacing--x-small);
+  padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--10);
   border-radius: var(--wp--custom--border--radius--medium);
-  border: solid 1px var(--wp--preset--color--foreground);
+  border: solid 1px var(--wp--preset--color--base);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -82,14 +64,14 @@ input[type="email"] {
 /* Button with fill. */
 .wp-element-button,
 .wp-block-button__link {
-  border: solid 1px var(--wp--preset--color--foreground);
+  border: solid 1px var(--wp--preset--color--base);
 }
 
 /* Button with outline. */
 .wp-block-button.is-style-outline > .wp-block-button__link,
 .wp-block-button .wp-block-button__link.is-style-outline {
-  border: solid 1px var(--wp--preset--color--foreground);
-  padding: var(--wp--custom--spacing--small) var(--wp--custom--spacing--medium);
+  border: solid 1px var(--wp--preset--color--base);
+  padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20);
 }
 
 /* Hover style for button with outline. */

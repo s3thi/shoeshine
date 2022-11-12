@@ -35,16 +35,6 @@ function shoeshine_register_block_styles() {
 		)
 	);
 
-	// Site title.
-	register_block_style(
-		'core/site-title',
-		array(
-			'name'         => 'shoeshine-site-title-elegant',
-			'label'        => __( 'Elegant', 'shoeshine' ),
-			'style_handle' => 'shoeshine-block-styles',
-		)
-	);
-
 	// Latest posts.
 	register_block_style(
 		'core/latest-posts',
@@ -120,16 +110,6 @@ function shoeshine_register_block_styles() {
 		array(
 			'name'         => 'shoeshine-post-navigation-link-large-label',
 			'label'        => __( 'Large label', 'shoeshine' ),
-			'style_handle' => 'shoeshine-block-styles',
-		)
-	);
-
-	// Quote.
-	register_block_style(
-		'core/quote',
-		array(
-			'name'         => 'shoeshine-quote-impact',
-			'label'        => __( 'Impact', 'shoeshine' ),
 			'style_handle' => 'shoeshine-block-styles',
 		)
 	);
