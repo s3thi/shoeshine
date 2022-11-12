@@ -1,18 +1,9 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"inherit":true},"style":{"spacing":{"margin":{"top":"var(--wp--preset--spacing--70)","right":"0","bottom":"var(--wp--preset--spacing--70)","left":"0"}}}} -->
-<main
-  class="wp-block-group"
-  style="
-    margin-top: var(--wp--preset--spacing--70);
-    margin-right: 0;
-    margin-bottom: var(--wp--preset--spacing--70);
-    margin-left: 0;
-  "
->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
+<main class="wp-block-group" style="margin-top: var(--wp--preset--spacing--60)">
   <!-- wp:template-part {"slug":"not-found"} /-->
-
-  <!-- wp:search {"label":"","buttonText":"Search"} /-->
+  <!-- wp:search {"label":""} /-->
 </main>
 <!-- /wp:group -->
 
