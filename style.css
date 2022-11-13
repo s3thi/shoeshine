@@ -107,3 +107,19 @@ theme.json. */
   .wp-block-button__link.is-style-outline:not(.has-background):hover {
   border: solid 1px var(--wp--preset--color--primary);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                  Headings                                  */
+/* -------------------------------------------------------------------------- */
+
+/* Despite being defined in theme.json, this gets overridden by the block gap
+properties unless I add this rule. */
+
+.wp-block-post-content h1:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h2:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h3:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h4:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h5:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h6:not([style*="margin-top"]):not(:first-child) {
+  margin-top: var(--wp--preset--spacing--50);
+}

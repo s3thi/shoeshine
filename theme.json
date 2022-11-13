@@ -321,6 +321,11 @@
         },
         "color": {
           "text": "var(--wp--preset--color--base-dark)"
+        },
+        "spacing": {
+          "margin": {
+            "top": "var(--wp--preset--spacing--50)"
+          }
         }
       },
       "h1": {
