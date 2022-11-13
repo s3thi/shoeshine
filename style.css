@@ -7,7 +7,7 @@ Description: A custom theme for https://ankursethi.in
 Requires at least: 6.0
 Tested up to: 6.1
 Requires PHP: 7.4
-Version: 1.2.0
+Version: 1.2.1
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Text Domain: shoeshine
@@ -34,9 +34,27 @@ Shoeshine is distributed under the terms of the GNU GPL.
 /*                                    Links                                   */
 /* -------------------------------------------------------------------------- */
 
+/* Safari doesn't support the shorthand for text-decoration, so I can't use
+theme.json to set these styles. */
+
 a {
   text-underline-offset: var(
     --wp--custom--typography--text-decoration--offset--normal
+  );
+}
+
+a:hover {
+  text-decoration-color: var(--wp--preset--color--primary);
+  text-decoration-thickness: var(
+    --wp--custom--typography--text-decoration--thickness--normal
+  );
+}
+
+.wp-block-site-title a:where(:not(.wp-element-button)):hover {
+  text-decoration: underline;
+  text-decoration-color: var(--wp--preset--color--primary);
+  text-decoration-thickness: var(
+    --wp--custom--typography--text-decoration--thickness--normal
   );
 }
 
@@ -58,8 +76,8 @@ input[type="email"] {
 /*                                   Buttons                                  */
 /* -------------------------------------------------------------------------- */
 
-/* Can't control button borders, paddings, and hover styles properly using
-   only theme.json. */
+/* Can't control button borders, paddings, and hover styles properly using only
+theme.json. */
 
 /* Button with fill. */
 .wp-element-button,
