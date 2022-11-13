@@ -1,8 +1,36 @@
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group">
-  <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-  <div class="wp-block-group">
-    <!-- wp:site-title {"level":0} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","right":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|primary-light","width":"4px"},"left":{"width":"0px","style":"none"}}},"backgroundColor":"secondary-ultralight","layout":{"type":"default"}} -->
+<div
+  class="wp-block-group has-secondary-ultralight-background-color has-background"
+  style="
+    border-top-style: none;
+    border-top-width: 0px;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-bottom-color: var(--wp--preset--color--primary-light);
+    border-bottom-width: 4px;
+    border-left-style: none;
+    border-left-width: 0px;
+    padding-top: var(--wp--preset--spacing--10);
+    padding-right: var(--wp--preset--spacing--10);
+    padding-bottom: var(--wp--preset--spacing--10);
+    padding-left: var(--wp--preset--spacing--10);
+  "
+>
+  <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div
+    class="wp-block-group alignfull"
+    style="
+      padding-right: var(--wp--preset--spacing--30);
+      padding-left: var(--wp--preset--spacing--30);
+    "
+  >
+    <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group">
+      <!-- wp:site-logo {"width":32,"shouldSyncIcon":true,"className":"is-style-default"} /-->
+
+      <!-- wp:site-title {"level":0} /-->
+    </div>
+    <!-- /wp:group -->
 
     <!-- wp:navigation {"hasIcon":false,"className":"is-style-shoeshine-header-navigation","layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /-->
   </div>

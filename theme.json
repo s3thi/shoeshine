@@ -161,6 +161,21 @@
           "slug": "primary-dark",
           "color": "#5b21b6",
           "name": "Primary Dark"
+        },
+        {
+          "slug": "primary-ultralight",
+          "color": "#e0d3f6",
+          "name": "Primary Ultralight"
+        },
+        {
+          "slug": "secondary",
+          "color": "#c93b76",
+          "name": "Secondary"
+        },
+        {
+          "slug": "secondary-ultralight",
+          "color": "#f1d7e6",
+          "name": "Secondary Ultralight"
         }
       ]
     },
@@ -255,9 +270,9 @@
     "spacing": {
       "blockGap": "var(--wp--preset--spacing--30)",
       "padding": {
-        "top": "var(--wp--preset--spacing--40)",
+        "top": "0",
         "right": "var(--wp--preset--spacing--30)",
-        "bottom": "var(--wp--preset--spacing--40)",
+        "bottom": "0",
         "left": "var(--wp--preset--spacing--30)"
       }
     },

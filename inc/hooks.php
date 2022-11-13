@@ -14,7 +14,7 @@
 function shoeshine_hook_theme_color() {
 	?>
 
-	<meta name="theme-color" content="#7C3AED">
+	<meta name="theme-color" content="#374151">
 
 	<?php
 }
