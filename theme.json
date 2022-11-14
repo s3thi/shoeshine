@@ -154,7 +154,7 @@
         },
         {
           "slug": "primary-light",
-          "color": "#BD9CF6",
+          "color": "#a78bfa",
           "name": "Primary Light"
         },
         {
@@ -163,18 +163,13 @@
           "name": "Primary Dark"
         },
         {
-          "slug": "primary-ultralight",
-          "color": "#e0d3f6",
-          "name": "Primary Ultralight"
-        },
-        {
           "slug": "secondary",
-          "color": "#c93b76",
+          "color": "#db2777",
           "name": "Secondary"
         },
         {
           "slug": "secondary-ultralight",
-          "color": "#f1d7e6",
+          "color": "#fbcfe8",
           "name": "Secondary Ultralight"
         }
       ]
