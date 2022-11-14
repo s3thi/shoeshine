@@ -7,7 +7,7 @@ Description: A custom theme for https://ankursethi.in
 Requires at least: 6.0
 Tested up to: 6.1
 Requires PHP: 7.4
-Version: 1.2.3
+Version: 1.2.4
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Text Domain: shoeshine
@@ -16,6 +16,17 @@ Tags: full-site-editing
 Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
+
+/* Fix issue with empty "Powered by WordPress" footer still taking up space. */
+.wp-block-group > p:has(a:empty) {
+  margin: 0;
+  padding: 0;
+}
+
+.wp-block-group:has(p > a:empty) {
+  margin: 0;
+  padding: 0;
+}
 
 /* -------------------------------------------------------------------------- */
 /*               Basic styles that Gutenberg doesn't support yet              */
