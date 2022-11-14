@@ -163,6 +163,11 @@
           "name": "Primary Dark"
         },
         {
+          "slug": "primary-ultralight",
+          "color": "#ddd6fe",
+          "name": "Primary Ultralight"
+        },
+        {
           "slug": "secondary",
           "color": "#db2777",
           "name": "Secondary"
@@ -171,6 +176,13 @@
           "slug": "secondary-ultralight",
           "color": "#fbcfe8",
           "name": "Secondary Ultralight"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "diagonal-secondary-to-primary-ultralight",
+          "gradient": "linear-gradient(135deg, var(--wp--preset--color--secondary-ultralight) 0%, var(--wp--preset--color--primary-ultralight) 100%)",
+          "name": "Diagonal secondary to primary ultralight"
         }
       ]
     },
