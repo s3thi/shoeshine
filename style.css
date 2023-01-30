@@ -4,16 +4,16 @@ Theme URI: https://github.com/s3thi/shoeshine
 Author: Ankur Sethi
 Author URI: https://ankursethi.in
 Description: A custom theme for https://ankursethi.in
-Requires at least: 6.0
+Requires at least: 6.1
 Tested up to: 6.1
 Requires PHP: 7.4
 Version: 1.2.4
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: shoeshine
 Tags: full-site-editing
 
-Shoeshine WordPress Theme, (C) 2022 Ankur Sethi
+Shoeshine WordPress Theme, (C) 2023 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
 
@@ -26,6 +26,25 @@ Shoeshine is distributed under the terms of the GNU GPL.
 .wp-block-group:has(p > a:empty) {
   margin: 0;
   padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Layout styles                               */
+/* -------------------------------------------------------------------------- */
+
+html,
+body,
+.wp-site-blocks {
+  height: 100%;
+}
+
+.wp-site-blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* -------------------------------------------------------------------------- */
