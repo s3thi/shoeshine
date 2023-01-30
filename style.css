@@ -17,17 +17,6 @@ Shoeshine WordPress Theme, (C) 2023 Ankur Sethi
 Shoeshine is distributed under the terms of the GNU GPL.
 */
 
-/* Fix issue with empty "Powered by WordPress" footer still taking up space. */
-.wp-block-group > p:has(a:empty) {
-  margin: 0;
-  padding: 0;
-}
-
-.wp-block-group:has(p > a:empty) {
-  margin: 0;
-  padding: 0;
-}
-
 /* -------------------------------------------------------------------------- */
 /*                                Layout styles                               */
 /* -------------------------------------------------------------------------- */
@@ -45,6 +34,11 @@ body,
 
 main {
   flex-grow: 1;
+}
+
+/* Fix issue with empty "Powered by WordPress" footer still taking up space. */
+footer + .wp-block-group {
+  display: none;
 }
 
 /* -------------------------------------------------------------------------- */
